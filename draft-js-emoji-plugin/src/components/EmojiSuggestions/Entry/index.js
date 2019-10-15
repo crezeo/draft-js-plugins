@@ -2,7 +2,7 @@ import React, {
   // PropTypes,
   Component,
 } from 'react';
-import { Emoji } from '@tunoltd/emoji-mart';
+import { Emoji } from 'emoji-mart';
 
 export default class Entry extends Component {
   constructor(props) {

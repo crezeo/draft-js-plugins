@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { genKey } from 'draft-js';
-import { NimbleEmojiIndex } from '@tunoltd/emoji-mart';
-import emojiData from '@tunoltd/emoji-mart/data/all';
+import { NimbleEmojiIndex } from 'emoji-mart';
+import emojiData from 'emoji-mart/data/all';
 
 import Entry from './Entry';
 import addEmoji, { Mode as AddEmojiMode } from '../../modifiers/addEmoji';

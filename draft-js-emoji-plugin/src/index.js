@@ -1,9 +1,10 @@
 import React from 'react';
 import { Map } from 'immutable';
 import { EditorState } from 'draft-js';
-import { Picker } from '@tunoltd/emoji-mart';
+import { Picker } from 'emoji-mart';
 
 import Emoji from './components/Emoji';
+import EmojiSelect from './components/EmojiSelect';
 import EmojiSuggestions from './components/EmojiSuggestions';
 import EmojiSuggestionsPortal from './components/EmojiSuggestionsPortal';
 import emojiStrategy from './emojiStrategy';
@@ -121,7 +122,11 @@ export default (config = {}) => {
   const DecoratedEmojiSuggestions = props => (
     <EmojiSuggestions {...props} {...suggestionsProps} />
   );
-  const DecoratedEmojiSelect = props => <Picker {...props} {...pickerProps} />;
+  const DecoratedEmojiSelect = props => (
+    <EmojiSelect>
+      <Picker {...props} {...pickerProps} />;
+    </EmojiSelect>
+  );
   const DecoratedEmoji = props => <Emoji {...props} {...emojiProps} />;
   const DecoratedEmojiSuggestionsPortal = props => (
     <EmojiSuggestionsPortal {...props} store={store} />
