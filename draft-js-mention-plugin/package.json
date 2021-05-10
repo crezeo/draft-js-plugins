@@ -36,7 +36,7 @@
   "dependencies": {
     "clsx": "^1.0.4",
     "immutable": "~3.7.4",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.21",
     "prop-types": "^15.5.8",
     "union-class-names": "^1.0.0"
   },
